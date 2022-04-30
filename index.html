@@ -26,6 +26,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />  
 </head>
+<body>  
+  <div id="preloader"></div>
 
 <body>
 
@@ -227,6 +229,15 @@
     <script src="js/script.js">
 
     </script>
+    
+        <script>
+
+        $(window).on("load", function () {
+            $("#preloader").delay(1500).fadeOut("slow");
+        });4000;
+
+    </script>
+    
 </body>
 
 </html>
