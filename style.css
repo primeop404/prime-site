@@ -117,7 +117,7 @@ nav2 li a {
     padding-left: 25px;
     border-bottom: 1px solid #000000;
     border-radius: 30px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     transition: all 0.2s linear;
 }
 
@@ -156,11 +156,11 @@ nav2 li:nth-child(4):hover a {
 }
 
 nav2 li:nth-child(5):hover a {
-    background-color: #ffe602;
+    background-color: #ff7c02;
 }
 
 nav2 li:nth-child(6):hover a {
-    background-color: #a202ff;
+    background-color: #ff0202;
 }    
 
 nav2 ul li a:hover span {
@@ -418,7 +418,7 @@ nav2 ul li a:hover span {
 
 .services .serv-content .card {
     width: calc(33% - 10px);
-    background: #222;
+    background: rgb(29, 29, 29);
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -427,7 +427,7 @@ nav2 ul li a:hover span {
 }
 
 .services .serv-content .card:hover {
-    background: crimson;
+    background: rgb(255, 0, 38);
 }
 
 .services .serv-content .card .box {
@@ -1099,5 +1099,9 @@ footer .wave#wave4 {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+
+    .services .serv-content .nn {
+        right: 30px;
     }
 }
