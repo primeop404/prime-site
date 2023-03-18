@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Maven+Pro:wght@900&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap');
+
+:root{
+    /* colors  */
+    --backcolor:#111;
+    --fontcolor:#eeeae1;
+    --btncolor:#ff0000;
+    --fadecolor:#ff0000;
+    --ccolor:linear-gradient(221deg, #212121 28%, #00c1c1 100%);
+
+    --box1color:#ff0000;
+    --box1image:linear-gradient(235deg, #ff0000 0%, #eeff00 100%);
+    --box2color:#118ff6;
+    --box2image:linear-gradient(235deg, #118ff6 0%, #01c1ff 100%);
+    --box3color:#0d1518;
+    --box3image:linear-gradient(235deg, #1eff00 0%, #003507 100%);
+
+    --h2font:'Dosis';
+    --pfont:'Roboto', sans-serif;
+    --logofont:'Maven Pro', sans-serif;
+    --navfont:'Ubuntu';
+    --titletext:'Dosis';
+
+    --bannerback:url(../media/bg1.png);
+    --toggleimg:url(../media/menu-alt.png);
+    --toggleactiveimg:url(../media/menu-x.png);
+    --merback:url(../media/mer-bg.jpg);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--backcolor);
+    /* height: 10000px; */
+}
+p{
+    color: var(--fontcolor);
+    font-family: var(--pfont);
+}
+section{
+    padding: 100px;
+}
+
+/* games */
+
+.game .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.game .content .box{
+    position: relative;
+    width: 340px;
+    margin: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(226, 226, 226, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    outline: none;
+    border: none;
+}
+.game .content .box .text{
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    width: 220px;
+    color: red;
+    font-family: var(--pfont);
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--fontcolor);
+    box-shadow: 2px -62px 46px 0px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 2px -62px 46px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 2px -62px 46px 0px rgba(0,0,0,0.36);
+}
+.game .content .box .text h3{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.game .content .box .text h3:hover{
+    color:#162936;
+    text-shadow: -1px 5px 0px rgba(0, 174, 255, 0.44);
+    transform: translateY(-5px);
+    transition: 0.5s;
+
+}
+.game .content .box .imgBx{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.game .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game .title-text{
+    font-size: 2.6em;
+    color: #ffffff;
+}
+.game .title-text span{
+    color: #fc0000;
+}
+.merchandise{
+    background: var(--merback);
+    background-size: cover;
+}
+
+.merchandise .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.merchandise .content .box{
+    position: relative;
+    background-color: #01C1FF;
+    width:400px;
+    height: 400px;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+.merchandise .content .box .imgBx{
+    width: 100%;
+    position: relative;
+}
+.merchandise .content .box .imgBx img{
+    width: 100%;
+    object-fit: cover;
+    height: 375px;
+    border-radius: 10px 10px 10px 10px;
+}
+.merchandise .title-text{
+    font-size: 2.2em;
+    color: red;
+}
+
+.merchandise .content .box-1{
+    background-color: var(--box1color);
+    background-image: var(--box1image);
+}
+.merchandise .content .box-2{
+    background-color: var(--box2color);
+    background-image: var(--box2image);
+}
+.merchandise .content .box-3{
+    background-color: var(--box3color);
+    background-image: var(--box3image);
+}
+.box .know{
+    position: absolute;
+    bottom: -20px;
+    left: 95px;
+    text-decoration: none;
+    background-color: var(--fontcolor);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: var(--backcolor);
+    font-family:var(--navfont);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.75s ease-out;
+}
+
+.box .know:hover{
+    background-color:var(--backcolor);
+    color: var(--fontcolor);
+    transform: translateY(-5px);
+}
+.merchandise .title-text span{
+    color: white;
+}
